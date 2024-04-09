@@ -3,7 +3,11 @@ import { RouterLink, RouterView } from "vue-router";
 </script>
 
 <template>
-  <header>
+  <div class="bg-gradient-to-t from-rose-400 to-orange-200">
+
+    <RouterView />
+
+    <header>
     
     <div class="wrapper">
 
@@ -13,8 +17,7 @@ import { RouterLink, RouterView } from "vue-router";
       </nav>
     </div>
   </header>
-
-  <RouterView />
+  </div>
 </template>
 
 <style scoped>

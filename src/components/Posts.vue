@@ -1,6 +1,11 @@
 <script setup>
+  import Post from "./Post.vue"
+  import posts from "../data/posts.json";
+  
 </script>
 
 <template>
-  <h1 class="text-xl">hi</h1>
+  <div v-for="post in posts">
+    <Post class="text-xl" :postData="post" />
+  </div>
 </template>
