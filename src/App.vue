@@ -3,7 +3,7 @@ import { RouterLink, RouterView } from "vue-router";
 </script>
 
 <template>
-  <div class="bg-gradient-to-t from-rose-400 to-orange-200">
+  <div class="bg-gradient-to-t from-bottomColor via-midColor to-topColor">
 
     <RouterView />
 
