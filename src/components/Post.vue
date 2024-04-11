@@ -26,7 +26,7 @@
 </script>
 
 <template>
-    <div class="bg-white px-7 py-6 mb-5 rounded">
+    <div class="bg-white px-7 py-6 mb-5 rounded hover:cursor-pointer">
         <div class="mb-3 flex space-x-4">
             <img :src="photoPath" class="h-14 w-10 rounded-full" />
             <div>
