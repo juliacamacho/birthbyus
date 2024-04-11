@@ -15,13 +15,13 @@
     let user = getUser(props.postData.id);
     let username = user["username"];
 
+    // profile photo (use default profile photo if user does not have one)
+    let photoPath = user.profile_photo ? `/src/data/photos/${user.profile_photo}` : `/src/data/photos/default_propic.png`
+
     function convertDate(date) {
         let postDate = new Date(date);
         return postDate.toLocaleString('en-us', {weekday:'long', year: "numeric", month: "long", day: "numeric",})
-    }
-
-    let photoPath = `/src/data/photos/${username}_propic.jpg`
-    
+    }    
 
 </script>
 
